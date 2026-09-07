@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        *{margin:0; padding:0;}
+        #title{
+        color: pink;
+        text-align: center;
+        }
+        .imgdiv{  /*背景*/
+           /* text-align: center; */
+           background-image: url(./背景.webp);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;  /* 防止不重复 */
+        /* background-size: cover;
+         background-position: center;  */
+         /* padding-top: 50px;  */
+         /* position: relative; */
+        }
+        .c1{
+            color: pink;
+        }
+        .c2{
+            color: pink;
+        }
+        .c3{
+            color: pink;
+        }
+        .BOX{
+            width: 100%;
+         height: 150px;
+         background-color: rgba(200, 200, 200,0.5);
+         display: flex;
+         justify-content: center;
+        /* position: absolute; */
+         /* opacity: 0.52;  透明度（会影响背景和字体）*/
+        }
+        .box{
+         height: 100%;
+         width: 25%;
+         display: flex;
+         padding-top: 20px;
+         box-sizing: border-box;
+        }
+        .box1{
+           padding-left: 5px;
+        }
+        .box_img{
+            
+            margin-right: 10px;
+        }
+        .box:hover{
+            background-color: rgba(255,255,255,0.75);
+        }
+        .header{
+            width:980px;
+	      margin:0 auto 7px;
+	       height:86px;
+	         line-height:86px;
+	     text-align:center;
+	      font-family:"微软雅黑";
+	       color:#a5a5a5;
+        }
+        .header h1{ font-weight:normal;}
+        .header strong{
+	font-weight:normal;
+	font-size:30px;
+}
+        .header em{
+ 	font-style:normal;
+	font-size:20px;
+}
+
+
+.picture{
+height: 100px;
+}
+.audio{
+    height: 100px;
+            margin-left: 13px;
+            text-align: left;
+            border-radius: 150px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            animation: move 3s linear infinite;
+            animation-play-state: paused;
+}
+@keyframes move{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.text{
+    display: flex;
+}
+
+    </style>
+</head>
+<body>
+
+    <script>
+        window.alert("此网站制作纯属娱乐,如有商用想法作者愿意高价出售")
+    </script>
+
+    <div class="imgdiv">
+
+
+        <div class="text">
+            <img style="animation-play-state: running;" onclick="play()" class="audio"  src="./作者.jpg" alt="">
+          <audio  src="https://www.mitangguan.cn/bgm.mp3"></audio>
+          <div style="margin-top: 20px;margin-left: 350px;font-size: 60px;text-decoration: none;color: black;font-weight: bold;">诗是迷醉心怀的智慧。<br>
+           <div style="margin-left: 80px;font-size: 17px;">请选择你的英雄↓（左上角不能选，那是作者本人）</div>
+        </div>
+            <a  style="margin-top: 60px;margin-left: 5px;text-decoration: none;color: black;font-size: 20px;"
+           href="https://baike.baidu.com/item/%E7%BA%AA%E4%BC%AF%E4%BC%A6%C2%B7%E5%93%88%E5%88%A9%E5%8B%92%C2%B7%E7%BA%AA%E4%BC%AF%E4%BC%A6/50352787?fr=ge_ala"> ———纪伯伦</a>
+        </div>
+      <div style="margin-left: 55px;">作者</div>
+
+
+
+  <div class="BOX">
+    <div class="box">
+        <img class="box_img" src="./余华.webp" alt="">
+    </div>
+
+    <div class="box">
+        <img class="box_img" src="./徐志摩.webp" alt="">
+       
+    </div>
+
+    <div class="box">
+        <img class="box_img" src="./李白.webp" alt="">
+       
+    </div>
+
+    <div class="box">
+        <img class="box_img" src="./杜甫.webp" alt="">
+       
+    </div>
+    <div class="box">
+        <img class="box_img" src="./范小勤.webp" alt="">
+       
+    </div>
+
+    <div class="box">
+        
+        <img class="box_img" src="./陈桂林.webp" alt="">
+       
+    </div>
+    
+    </div>
+  
+
+    <div class="BOX">
+        <div class="box">
+           <a style="text-decoration: none;color: black;font-family:楷体;"  href="https://baike.baidu.com/item/%E4%BD%99%E5%8D%8E/6935?fr=ge_ala"><li>抛弃旧的东西是很难的，但是往往旧的东西会阻碍你们往前走。</li></a>
+        </div>
+    
+        <div class="box">
+            <a style="text-decoration: none;color: black;font-family:楷体;"  href="https://baike.baidu.com/item/%E5%BE%90%E5%BF%97%E6%91%A9/286345"><li>悄悄地我走了,正如我悄悄地来,我挥一挥衣袖,不带走一片云彩。</li></a>
+         </div>
+
+         <div class="box">
+            <a style="text-decoration: none;color: black;font-family:楷体;"  href="https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD/1043"><li>长风破浪会有是，直挂云帆济沧海。</li></a>
+         </div>
+         <div class="box">
+            <a style="text-decoration: none;color: black;font-family:楷体;"  href="https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB/63508"><li>安得广厦千万间，大庇天下寒士俱欢颜。</li></a>
+         </div>
+         <div class="box">
+            <a style="text-decoration: none;color: black;font-family:楷体;"  href="https://baike.baidu.com/item/%E8%8C%83%E5%B0%8F%E5%8B%A4?fromModule=lemma_search-box"><li>还会看电视！</li></a>
+         </div>
+         <div class="box">
+            <a style="text-decoration: none;color: black;font-family:楷体;"  href="https://baike.baidu.com/item/%E5%91%A8%E5%A4%84%E9%99%A4%E4%B8%89%E5%AE%B3/63249430?fr=ge_ala"><li>时间差不多了哦！</li></a>
+         </div>
+        
+        </div>
+  
+       
+        <div id="title"></div>
+    <input id="text1" type="text">
+    <input id="text2" type="text">
+    <input id="text3" type="text">
+    <button onclick="register()">以你现在的知识储备，输入你记得的三句诗</button>
+    <button onclick="outputpoem()">中国上下五千年，你居然只知道这些↑ ？！</button>
+    <script>
+        var title=document.getElementById("title")
+        var text1=document.getElementById("text1")
+        var text2=document.getElementById("text2")
+        var text3=document.getElementById("text3")
+ function register(){
+    var ajax=new XMLHttpRequest();
+    ajax.open("get","http://127.0.0.1:8080/test/add?text1="+text1.value+"&text2="+text2.value+"&&text3="+text3.value)
+    ajax.send();
+ }
+
+ function outputpoem(){
+    var ajax=new XMLHttpRequest();
+    ajax.open("get","http://127.0.0.1:8080/test/select?text1="+text1.value+"&text2="+text2.value+"&text3="+text3.value)
+    ajax.send();
+
+    ajax.onload=function(){
+        // console.log(ajax.responseText);
+        var object=JSON.parse(ajax.responseText)
+      //  console.log(object);
+    
+        for(var i=0;i<object.length;i++){
+            var div=document.createElement("div");
+            div.className="c"+(i+1);
+            div.innerText=object[i].text1;
+            console.log(div);
+            title.appendChild(div);
+
+            var div=document.createElement("div");
+            div.className="c"+(i+1);
+            div.innerText=object[i].text2;
+            console.log(div);
+            title.appendChild(div);
+
+            var div=document.createElement("div");
+            div.className="c"+(i+1);
+            div.innerText=object[i].text3;
+            console.log(div);
+            title.appendChild(div);
+        }
+
+       // title.innerText=ajax.responseText
+    }
+ }
+  var img= document.querySelector(".audio")
+  var audio=document.querySelector("audio");
+   function play(){
+    console.log("666")
+   if( img.style.animationPlayState=="paused") {
+    img.style.animationPlayState="running";
+     audio.play();
+   }
+else {
+    img.style.animationPlayState="paused";
+ audio.pause();
+}
+   }
+    </script>
+
+<div style="display: flex;">
+    <div style="margin-left: 100px;padding-top: 10px;font-weight: bolder;">行业新闻</div>
+    <div style="margin-left: 450px;padding-top: 10px;font-weight: bolder;">征文赛事</div>
+</div>
+
+<div style="display: flex;">
+<div style="margin-left: 25px;">
+
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-02-20/25952233.shtml">2023年诗歌：在经典与历史的文脉中建构新时代诗歌写作</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-02-14/25902825.shtml">访谈 | 谢冕、邵燕君：做一个可爱的人</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-02-19/25944149.shtml">《诗刊》改版：打造新时代诗歌高质量发展“新引擎”</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-01-19/25791922.shtml">是沸腾的工作场景和诗意盎然的群山选择了我：温馨访谈</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-01-19/25791922.shtml">这三部英雄史诗用摇滚演绎，热血沸腾！</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-02-08/25890034.shtml">2023年中华诗词十大新闻</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-01-30/25845202.shtml">吴思敬谈诗歌教育：一个灵魂唤醒另一个灵魂</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2020-12-31/16361246.shtml">中国诗歌网“汉诗英译”获中宣部重点项目资助</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2016-11-23/2103533.shtml">一分钟教你注册中国诗歌网，自由写诗</a></div>
+</div>
+
+<div style="margin-left:100px;">
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-03-13/26089385.shtml">“唐诗之路，诗意台州”第八届中国诗歌节诗歌征集启事</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-02-07/25890005.shtml">2024年“春天送你一首诗”活动征稿启事</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2024-02-03/25861939.shtml">2024年橘花诗会诗歌征集启事</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2023-12-07/25539684.shtml">“2023李白诗歌奖”征集启事</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2023-09-16/25061620.shtml">《诗刊》“数字诗界”栏目征稿启事</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2023-09-22/25105480.shtml">中国新诗版本馆征集启事</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2023-09-27/25131769.shtml">第八届“铜铃山杯”全国诗歌大赛征稿启事</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2023-09-12/25039588.shtml">第四届“爱在丽江·中国七夕情诗会” 爱情诗接力赛</a></div>
+    <div><a style="color: black;line-height:2"href="https://www.zgshige.com/c/2022-06-08/21742798.shtml">诗歌大擂台，公开征集挑战者！</a></div>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<img   src="./诗歌.jpg" alt="">
+ 
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package com.example.demo;
+
+import cn.hutool.http.HttpUtil;
+import cn.hutool.json.JSONObject;
+import cn.hutool.json.JSONUtil;
+import netscape.javascript.JSObject;
+import org.omg.CORBA.Object;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.File;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+
+@RestController //指定当前类为一个控制类
+@RequestMapping("/api")
+public class TestController {
+
+//    @Autowired
+//    private JdbcTemplate jdbcTemplate;
+
+    @Value("${upload.path}") //注入
+    private String UPLOAD_DIR;
+
+    @PostMapping("/upload")
+    public String uploadImg(MultipartFile file) {
+        File file1 = new File(UPLOAD_DIR);
+
+        //检查目标路径是否存在，如果不存在就创建该目录
+        if (!file1.exists()) file1.mkdir();
+
+        int index = file.getOriginalFilename().lastIndexOf(".");
+
+        //获取文件扩展名
+        String fileType = file.getOriginalFilename().substring(index);
+
+        //使用UUID.randomUUID()生成一个新的文件名，保证文件名唯一性
+        String fileName = UUID.randomUUID() + fileType;
+
+        try {
+            file.transferTo(new File(UPLOAD_DIR + fileName));
+            System.out.println("上传成功");
+            addType(fileName); //添加到数据库
+            return fileName;
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("上传失败");
+            return "上传失败";
+        }
+
+    }
+
+
+    public void addType(String fileName) {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            try {
+                Connection connection = DriverManager.getConnection(
+                        "jdbc:mysql://127.0.0.1:3306/job",
+                        "root",
+                        "cptbtptp666");
+                PreparedStatement pre = connection.prepareStatement("insert into type(imgURL,name) VALUES( '" + fileName + "',\"C++\")");
+                int lines = pre.executeUpdate();
+                System.out.println(lines > 0 ? "添加成功" : "添加失败");
+                pre.close();
+                connection.close();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+//    @GetMapping("/wxLogin")
+//    public User wxLogin(String code) {  //微信登录
+//        System.out.println(code);
+//        String url = "";
+//        String appId = "";
+//        String secret = "";
+//        String type = "authorization_code";
+//        Map<String, Object> paramMap = new HashMap<>();
+//        paramMap.put("appid", appId);
+//        paramMap.put("secret", secret);
+//        paramMap.put("js_code", code);
+//        paramMap.put("grant_type", type);
+//        String string = HttpUtil.get(url, paramMap);
+//        JSONObject object = JSONUtil.parseObj(string);
+//        System.out.println(object.get("openid"));
+//        String openId = object.get("openid").toString();
+//        System.out.println(openId);
+////        String openId=object
+//        User exists = exist(openId);
+//        return exists;
+//    }
+//
+//
+//    public User exist(String openId) {
+//        String sql = "select *from user where openId = ?";
+//        User user = null;
+//        try {
+//            user = jdbcTemplate.queryForObject(sql,
+//                    new Object[]{openId},
+//                    new BeanPropertyRowMapper<>(User.class));
+//        } catch (DataAccessException e) {
+//            e.printStackTrace();
+//        }
+//        if (user == null) {
+//            int rows = jdbcTemplate.update("insert into user (openId) values(?)", new Object[]{openId});
+//        }
+//        return user;
+//    }
+
+
+}
